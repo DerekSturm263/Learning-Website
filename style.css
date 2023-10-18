@@ -72,6 +72,10 @@ header {
     font-weight: bolder;
 }
 
+.page-link ol {
+    list-style: none;
+}
+
 .sidebar {
     position: fixed;
     left: 0;
