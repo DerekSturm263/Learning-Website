@@ -77,16 +77,20 @@ header {
 }
 
 .sidebar {
-    position: fixed;
     left: 0;
     width: 22%;
-    top: 100px;
-    bottom: 0;
     font-size: 20px;
     font-family: Calibri;
-    bottom: 100px;
+    margin: auto;
 }
 
 .sidebar a {
     text-decoration: none;
+}
+
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
 }
