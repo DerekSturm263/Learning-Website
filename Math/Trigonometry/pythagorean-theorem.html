@@ -32,7 +32,7 @@
                 </li>
                 <br />
                 <li>
-                    <a href="#3">Practice: Solving for C</a>
+                    <a href="#3">Practice: Solving for the Hypotenuse</a>
                 </li>
                 <br />
                 <li>
@@ -40,7 +40,7 @@
                 </li>
                 <br />
                 <li>
-                    <a href="#5">Practice: Solving for A or B</a>
+                    <a href="#5">Practice: Solving for a Leg</a>
                 </li>
                 <br />
                 <li>
@@ -95,19 +95,22 @@
     <br />
     <div class="card" id="3">
         <h2>
-            Practice: Solving for C
+            Practice: Solving for the Hypotenuse
         </h2>
         <p>
             Let's say we have a right triangle that looks like this:
         </p>
+        <p id="practice1">
+            Test
+        </p>
         <p class="question">
-            What's the length of the hypotenuse(c)?
+            What's the length of the hypotenuse?
         </p>
         <input class="answer" type="number" />
         <button onclick="getHypotenuse(3, 4)">
             Check Answer
         </button>
-        <button>
+        <button onclick="generateProblem1(1, 10, 1, 10, 'practice1')">
             Give Me Another!
         </button>
     </div>
@@ -147,19 +150,22 @@
     <br />
     <div class="card" id="5">
         <h2>
-            Practice: Solving for A or B
+            Practice: Solving for a Leg
         </h2>
         <p>
             Let's say we have a right triangle that looks like this:
         </p>
+        <p id="practice2">
+            Test
+        </p>
         <p class="question">
-            What's the length of leg a?
+            What's the length of the unknown leg?
         </p>
         <input class="answer" type="number" />
         <button onclick="">
             Check Answer
         </button>
-        <button>
+        <button onclick="generateProblem2(1, 10, 1, 10, 'practice2')">
             Give Me Another!
         </button>
     </div>
@@ -202,8 +208,10 @@
         </p>
     </div>
     <br />
+    <br />
     <div class="page-link">
         <a href="">Distance Formula</a>
     </div>
+    <br />
 </body>
 </html>
