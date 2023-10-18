@@ -1,0 +1,62 @@
+.tooltip {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-style: italic;
+    font-weight: bolder;
+    color: blue;
+}
+
+.tooltip:hover {
+    cursor: pointer;
+}
+
+.card {
+    width: 50%;
+    margin: auto;
+    font-family: Calibri;
+    background-color: white;
+    padding: 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin-top: 12px;
+    margin-bottom: 28px;
+    font-size: 30px;
+}
+
+.card button {
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    background-color: mediumslateblue;
+    color: white;
+}
+
+.answer {
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: grey;
+    border-style: solid;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+html {
+    background-color: skyblue;
+}
+
+header {
+    position: absolute;
+    background-color: darkslateblue;
+    padding: 25px;
+    color: white;
+    left: 0;
+    right: 0;
+    font-family: Calibri;
+    text-align: center;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+}
