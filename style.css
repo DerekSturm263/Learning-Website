@@ -61,8 +61,13 @@ header {
     box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.page-link a {
+.page-link {
     text-align: center;
     font-family: Calibri;
+}
+
+.page-link a {
     text-decoration: none;
+    color: black;
+    font-weight: bolder;
 }
