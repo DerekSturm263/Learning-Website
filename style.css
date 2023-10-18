@@ -71,3 +71,11 @@ header {
     color: black;
     font-weight: bolder;
 }
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 20%;
+    top: 100px;
+    bottom: 0;
+}
