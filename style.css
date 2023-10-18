@@ -61,7 +61,7 @@ header {
     box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.page-link {
+.page-link a {
     text-align: center;
     font-family: Calibri;
     text-decoration: none;
