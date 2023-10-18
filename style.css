@@ -77,8 +77,6 @@ header {
 }
 
 .sidebar {
-    left: 0;
-    width: 22%;
     font-size: 20px;
     font-family: Calibri;
     margin: auto;
@@ -93,4 +91,5 @@ header {
     top: 0;
     bottom: 0;
     justify-content: center;
+    display: flex;
 }
