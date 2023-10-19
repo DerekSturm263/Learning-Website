@@ -1,217 +1,226 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Pythagorean Theorem</title>
-    <link rel="stylesheet" href="../../style.css" />
-    <script src="../../main.js"></script>
-</head>
-
-<body>
-    <header>
-        <h1>
-            2. Pythagorean Theorem
-        </h1>
-    </header>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <div class="sidebar-container">
-        <nav class="sidebar">
-            <ol>
+    <head>
+        <title>Pythagorean Theorem</title>
+        <link rel="stylesheet" href="../../style.css" />
+        <script src="../../main.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <h1>
+                2. Pythagorean Theorem
+            </h1>
+        </header>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="sidebar-container">
+            <nav class="sidebar">
+                <ol>
+                    <li>
+                        <a href="#1">What is it?</a>
+                    </li>
+                    <li>
+                        <a href="#2">Why do we need it?</a>
+                    </li>
+                    <li>
+                        <a href="#3">Practice: Solving for C</a>
+                    </li>
+                    <li>
+                        <a href="#4">Solving For Other Sides</a>
+                    </li>
+                    <li>
+                        <a href="#5">Practice: Solving for A/B</a>
+                    </li>
+                    <li>
+                        <a href="#6">Recap</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <div class="page-link back">
+            <a href="what-is-trigonometry.html">What is Trigonometry?</a>
+        </div>
+        <br />
+        <div class="card" id="1">
+            <h2>
+                1. What is the Pythagorean Theorem?
+            </h2>
+            <p>
+                The <i>Pythagorean Theorem</i> is an equation for right triangles that indicates the relationship between the lengths of all 3 sides.
+                Specifically, it states that for all right triangles, if you square the length of both <span class="tooltip">legs</span> and add them together, you get the length of the <span class="tooltip">hypotenuse</span> squared.
+            </p>
+            <p>Let's put that into equation form...</p>
+            <p>
+                Given:
+            </p>
+            <ul>
                 <li>
-                    <a href="#1">What is the Pythagorean Theorem?</a>
+                    <span style="color: red"><b>a</b></span> and <span style="color: blue"><b>b</b></span> are the lengths of each leg
                 </li>
-                <br />
                 <li>
-                    <a href="#2">Why do we need the Pythagorean Theorem?</a>
+                    <span style="color: purple"><b>c</b></span> is the length of the hypotenuse
                 </li>
-                <br />
+            </ul>
+            <p>
+                Then: <b><span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup> = <span style="color: purple">c</span><sup>2</sup></b>
+            </p>
+            <p>That means that if we know the length of the hyponetuse squared, we can get the length of the hypotenuse by square rooting our number! To apply this to the equation, we can just square root both sides and it will cancel out with the square on the side with the hypotenuse.</p>
+            <p>
+                So: <b><span style="color: purple">c</span> = sqrt(<span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup>)</b>
+            </p>
+        </div>
+        <br />
+        <div class="card" id="2">
+            <h2>
+                2. Why do we need the Pythagorean Theorem?
+            </h2>
+            <p>
+                The Pythagorean Theorem can be used to help us solve the distance between two points, which is a crucial function in video game math.
+            </p>
+            <p>
+                Any two points in 2D space form a right triangle, which means that if we have the positions of 2 objects, we can get the distance between them by using the <i>Pythagorean Theorem</i>.
+            </p>
+            <p>
+                But more about that later...
+            </p>
+        </div>
+        <br />
+        <div class="card" id="3">
+            <div class="head">
+                <h2>
+                    3. Practice: Solving for the Hypotenuse
+                </h2>
+                <button onclick="problem1Answers = generateProblem1(1, 10, 1, 10, 'practice1', 'canvas1')" class="refresh">
+                    <img src="../../refresh-icon.png" />
+                </button>
+            </div>
+            <p>
+                Let's say we have a right triangle that looks like this:
+            </p>
+            <canvas id="canvas1" width="200" height="100"></canvas>
+            <p id="practice1">
+                Test
+            </p>
+            <p class="question">
+                What's the length of the hypotenuse?
+            </p>
+            <input class="answer" type="number" id="practice1-answer" placeholder="Your Answer" />
+            <button onclick="checkAnswer(getHypotenuse(problem1Answers[0], problem1Answers[1]), 'practice1-answer')" class="answer-button locked">
+                Verify Answer
+            </button>
+            <button onclick="alert(getHypotenuse(problem1Answers[0], problem1Answers[1]))" class="answer-button">
+                Reveal Solution
+            </button>
+        </div>
+        <br />
+        <div class="card" id="4">
+            <h2>
+                4. Solving For Other Sides
+            </h2>
+            <p>
+                What happens if we know the length of the hypotenuse, but only one of the legs? Well, lucky for us, we can still use the <i>Pythagorean Theorem</i> to solve for that missing side. If you need to solve for b, simply plug in the values for a and c and solve for b. If you need to solve for a, simply plug in the values for b and c and solve for a.
+            </p>
+            <p>
+                An easier way to do this is to subtract a<sup>2</sup> or b<sup>2</sup> on both sides. Subtract a<sup>2</sup> on both sides if you want to solve for b and subtract b<sup>2</sup> on both sides if you want to solve for a. The following equations are the result:
+            </p>
+            <p>
+                <b><span style="color: red">a</span><sup>2</sup> = <span style="color: purple">c</span><sup>2</sup> - <span style="color: blue">b</span><sup>2</sup></b>
+            </p>
+            <p>
+                or
+            </p>
+            <p>
+                <b><span style="color: blue">b</span><sup>2</sup> = <span style="color: purple">c</span><sup>2</sup> - <span style="color: red">a</span><sup>2</sup></b>
+            </p>
+            <p>
+                After square rooting both sides to get a and b on their own, we get the final two equations for that help us solve for a or b. The equation you choose is based on which sides you know. If you know a and c, choose the equation to solve for b. If you know b and c, choose the equation to solve for a.
+            </p>
+            <p>
+                <b><span style="color: red">a</span> = sqrt(<span style="color: purple">c</span><sup>2</sup> - <span style="color: blue">b</span><sup>2</sup>)</b>
+            </p>
+            <p>
+                or
+            </p>
+            <p>
+                <b><span style="color: blue">b</span> = sqrt(<span style="color: purple">c</span><sup>2</sup> - <span style="color: red">a</span><sup>2</sup>)</b>
+            </p>
+        </div>
+        <br />
+        <div class="card" id="5">
+            <div class="head">
+                <h2>
+                    5. Practice: Solving for a Leg
+                </h2>
+                <button onclick="problem2Answers = generateProblem2(1, 10, 1, 10, 'practice2', 'canvas2')" class="refresh">
+                    <img src="../../refresh-icon.png" />
+                </button>
+            </div>
+            <p>
+                Let's say we have a right triangle that looks like this:
+            </p>
+            <canvas id="canvas2" width="200" height="100"></canvas>
+            <p id="practice2">
+                Test
+            </p>
+            <p class="question">
+                What's the length of the unknown leg?
+            </p>
+            <input class="answer" type="number" id="practice2-answer" placeholder="Your Answer" />
+            <button onclick="checkAnswer(getLeg(problem2Answers[0], problem2Answers[1]), 'practice2-answer')" class="answer-button locked">
+                Verify Answer
+            </button>
+            <button onclick="alert(getHypotenuse(problem2Answers[0], problem2Answers[1]))" class="answer-button">
+                Reveal Solution
+            </button>
+        </div>
+        <br />
+        <div class="card" id="6">
+            <h2>
+                6. Recap
+            </h2>
+            <p>
+                The <i>Pythagorean Theorem</i> is a helpful equation that helps us solve for the length of any side of any right triangle, as long as we know the lengths of the other 2 sides.
+            </p>
+            <p>
+                There are 3 helpful equations we can keep in mind for solving for any of these sides:
+            </p>
+            <p>
+                Given:
+            </p>
+            <ul>
                 <li>
-                    <a href="#3">Practice: Solving for the Hypotenuse</a>
+                    <span style="color: red"><b>a</b></span> and <span style="color: blue"><b>b</b></span> are the lengths of each leg
                 </li>
-                <br />
                 <li>
-                    <a href="#4">Solving For Other Sides</a>
+                    <span style="color: purple"><b>c</b></span> is the length of the hypotenuse
                 </li>
-                <br />
-                <li>
-                    <a href="#5">Practice: Solving for a Leg</a>
-                </li>
-                <br />
-                <li>
-                    <a href="#6">Recap</a>
-                </li>
-            </ol>
-        </nav>
-    </div>
-    <div class="card" id="1">
-        <h2>
-            What is the Pythagorean Theorem?
-        </h2>
-        <p>
-            The <i>Pythagorean Theorem</i> is an equation for right triangles that indicates the relationship between the lengths of all 3 sides.
-            Specifically, it states that for all right triangles, if you square the length of both <span class="tooltip">legs</span> and add them together, you get the length of the <span class="tooltip">hypotenuse</span> squared.
-        </p>
-        <p>Let's put that into equation form...</p>
-        <p>
-            Given:
-        </p>
-        <ul>
-            <li>
-                <span style="color: red"><b>a</b></span> and <span style="color: blue"><b>b</b></span> are the lengths of each leg
-            </li>
-            <li>
-                <span style="color: purple"><b>c</b></span> is the length of the hypotenuse
-            </li>
-        </ul>
-        <p>
-            Then: <b><span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup> = <span style="color: purple">c</span><sup>2</sup></b>
-        </p>
-        <p>That means that if we know the length of the hyponetuse squared, we can get the length of the hypotenuse by square rooting our number! To apply this to the equation, we can just square root both sides and it will cancel out with the square on the side with the hypotenuse.</p>
-        <p>
-            So: <b><span style="color: purple">c</span> = sqrt(<span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup>)</b>
-        </p>
-    </div>
-    <br />
-    <div class="card" id="2">
-        <h2>
-            Why do we need the Pythagorean Theorem?
-        </h2>
-        <p>
-            The Pythagorean Theorem can be used to help us solve the distance between two points, which is a crucial function in video game math.
-        </p>
-        <p>
-            Any two points in 2D space form a right triangle, which means that if we have the positions of 2 objects, we can get the distance between them by using the <i>Pythagorean Theorem</i>.
-        </p>
-        <p>
-            But more about that later...
-        </p>
-    </div>
-    <br />
-    <div class="card" id="3">
-        <h2>
-            Practice: Solving for the Hypotenuse
-        </h2>
-        <p>
-            Let's say we have a right triangle that looks like this:
-        </p>
-        <p id="practice1">
-            Test
-        </p>
-        <p class="question">
-            What's the length of the hypotenuse?
-        </p>
-        <input class="answer" type="number" />
-        <button onclick="getHypotenuse(3, 4)">
-            Check Answer
-        </button>
-        <button onclick="generateProblem1(1, 10, 1, 10, 'practice1')">
-            Give Me Another!
-        </button>
-    </div>
-    <br />
-    <div class="card" id="4">
-        <h2>
-            Solving For Other Sides
-        </h2>
-        <p>
-            What happens if we know the length of the hypotenuse, but only one of the legs? Well, lucky for us, we can still use the <i>Pythagorean Theorem</i> to solve for that missing side. If you need to solve for b, simply plug in the values for a and c and solve for b. If you need to solve for a, simply plug in the vaules for b and c and solve for a.
-        </p>
-        <p>
-            If we move some terms around in the equation, we can create two more equations to solve for a and b.
-        </p>
-        <p>
-            <b><span style="color: blue">b</span><sup>2</sup> = <span style="color: purple">c</span><sup>2</sup> - <span style="color: red">a</span><sup>2</sup></b>
-        </p>
-        <p>
-            or
-        </p>
-        <p>
-            <b><span style="color: red">a</span><sup>2</sup> = <span style="color: purple">c</span><sup>2</sup> - <span style="color: blue">b</span><sup>2</sup></b>
-        </p>
-        <p>
-            After square rooting both sides to get a and b on their own, we get the final two equations for that help us solve for a and b.
-        </p>
-        <p>
-            <b><span style="color: red">a</span> = sqrt(<span style="color: purple">c</span><sup>2</sup> - <span style="color: blue">b</span><sup>2</sup>)</b>
-        </p>
-        <p>
-            or
-        </p>
-        <p>
-            <b><span style="color: blue">b</span> = sqrt(<span style="color: purple">c</span><sup>2</sup> - <span style="color: red">a</span><sup>2</sup>)</b>
-        </p>
-    </div>
-    <br />
-    <div class="card" id="5">
-        <h2>
-            Practice: Solving for a Leg
-        </h2>
-        <p>
-            Let's say we have a right triangle that looks like this:
-        </p>
-        <p id="practice2">
-            Test
-        </p>
-        <p class="question">
-            What's the length of the unknown leg?
-        </p>
-        <input class="answer" type="number" />
-        <button onclick="">
-            Check Answer
-        </button>
-        <button onclick="generateProblem2(1, 10, 1, 10, 'practice2')">
-            Give Me Another!
-        </button>
-    </div>
-    <br />
-    <div class="card" id="6">
-        <h2>
-            Recap
-        </h2>
-        <p>
-            The <i>Pythagorean Theorem</i> is a helpful equation that helps us solve for the length of any side of any right triangle, as long as we know the lengths of the other 2 sides.
-        </p>
-        <p>
-            There are 3 helpful equations we can keep in mind for solving for any of these sides:
-        </p>
-        <p>
-            Given:
-        </p>
-        <ul>
-            <li>
-                <span style="color: red"><b>a</b></span> and <span style="color: blue"><b>b</b></span> are the lengths of each leg
-            </li>
-            <li>
-                <span style="color: purple"><b>c</b></span> is the length of the hypotenuse
-            </li>
-        </ul>
-        <p>
-            <b><span style="color: purple">c</span> = sqrt(<span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup>)</b>
-        </p>
-        <p>
-            <b><span style="color: red">a</span> = sqrt(<span style="color: purple">c</span><sup>2</sup> - <span style="color: blue">b</span><sup>2</sup>)</b>
-        </p>
-        <p>
-            <b><span style="color: blue">b</span> = sqrt(<span style="color: purple">c</span><sup>2</sup> - <span style="color: red">a</span><sup>2</sup>)</b>
-        </p>
-        <p>
-            These equations are all just the <i>Pythagorean Theorem</i> rewritten in different ways to solve for each of the side lengths.
-        </p>
-        <p>
-            With a little more math, we can write a new equation to solve for the distance between two points both in 2D and 3D...
-        </p>
-    </div>
-    <br />
-    <br />
-    <div class="page-link">
-        <a href="">Distance Formula</a>
-    </div>
-    <br />
-</body>
+            </ul>
+            <p>
+                <b><span style="color: purple">c</span> = sqrt(<span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup>)</b>
+            </p>
+            <p>
+                <b><span style="color: red">a</span> = sqrt(<span style="color: purple">c</span><sup>2</sup> - <span style="color: blue">b</span><sup>2</sup>)</b>
+            </p>
+            <p>
+                <b><span style="color: blue">b</span> = sqrt(<span style="color: purple">c</span><sup>2</sup> - <span style="color: red">a</span><sup>2</sup>)</b>
+            </p>
+            <p>
+                These equations are all just the <i>Pythagorean Theorem</i> rewritten in different ways to solve for each of the side lengths.
+            </p>
+            <p>
+                With a little more math, we can write a new equation to solve for the distance between two points in both 2D and 3D...
+            </p>
+        </div>
+        <br />
+        <div class="page-link forward">
+            <a href="distance-formula.html">Distance Formula</a>
+        </div>
+    </body>
 </html>
