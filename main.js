@@ -67,15 +67,13 @@ function generateProblem2b(minA, maxA, minC, maxC, id, id2) {
 }
 
 function getHypotenuse(a, b) {
-  let c = Math.sqrt(a * a + b * b);
-  
-  return c;
+    let c = Math.sqrt(a * a + b * b);
+    return c;
 }
 
 function getLeg(ab, c) {
-  let ba = Math.sqrt(c * c - ab * ab);
-  
-  return ba;
+    let ba = Math.sqrt(c * c - ab * ab);
+    return ba;
 }
 
 function checkAnswer(expectedValue, id) {
