@@ -4,18 +4,22 @@
         <title>Pythagorean Theorem</title>
         <link rel="stylesheet" href="../../style.css" />
         <script src="../../main.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     
     <body>
         <header>
-            <h1>
+            <a href="what-is-trigonometry.html">
+                <
+            </a>
+            <h2>
                 2. Pythagorean Theorem
-            </h1>
+            </h2>
+            <a href="distance-formula.html">
+                >
+            </a>
         </header>
-        <br />
-        <br />
-        <br />
-        <br />
         <br />
         <br />
         <br />
@@ -27,27 +31,26 @@
                         <a href="#1">What is it?</a>
                     </li>
                     <li>
-                        <a href="#2">Why do we need it?</a>
+                        <a href="#2">Try It!</a>
                     </li>
                     <li>
-                        <a href="#3">Practice: Solving for C</a>
+                        <a href="#3">Why do we need it?</a>
                     </li>
                     <li>
-                        <a href="#4">Solving For Other Sides</a>
+                        <a href="#4">Practice: Solving for C</a>
                     </li>
                     <li>
-                        <a href="#5">Practice: Solving for A/B</a>
+                        <a href="#5">Solving For Other Sides</a>
                     </li>
                     <li>
-                        <a href="#6">Recap</a>
+                        <a href="#6">Practice: Solving for A/B</a>
+                    </li>
+                    <li>
+                        <a href="#7">Recap</a>
                     </li>
                 </ol>
             </nav>
         </div>
-        <div class="page-link back">
-            <a href="what-is-trigonometry.html">What is Trigonometry?</a>
-        </div>
-        <br />
         <div class="card" id="1">
             <h2>
                 1. What is the Pythagorean Theorem?
@@ -79,7 +82,20 @@
         <br />
         <div class="card" id="2">
             <h2>
-                2. Why do we need the Pythagorean Theorem?
+                2. Try It!
+            </h2>
+            <p>
+                Below is an interactive example of the <i>Pythagorean Theorem</i> in practice. You'll notice that for any right triangle, the <i>Pythagorean Theorem</i> remains true. By default, this will be a "3-4-5" triangle. You may notice that 3<sup>2</sup> + 4<sup>2</sup> is equal to 25, and if you square root 25, you get 5!
+            </p>
+            <canvas id="canvas1" width="200" height="100"></canvas>
+            <p id="example">
+                Test
+            </p>
+        </div>
+        <br />
+        <div class="card" id="3">
+            <h2>
+                3. Why do we need the Pythagorean Theorem?
             </h2>
             <p>
                 The Pythagorean Theorem can be used to help us solve the distance between two points, which is a crucial function in video game math.
@@ -92,19 +108,19 @@
             </p>
         </div>
         <br />
-        <div class="card" id="3">
+        <div class="card" id="4">
             <div class="head">
                 <h2>
-                    3. Practice: Solving for the Hypotenuse
+                    4. Practice: Solving for the Hypotenuse
                 </h2>
-                <button onclick="problem1Answers = generateProblem1(1, 10, 1, 10, 'practice1', 'canvas1')" class="refresh">
+                <button onclick="problem1Answers = generateProblem1(1, 10, 1, 10, 'practice1', 'canvas2')" class="refresh" title="Try a different problem">
                     <img src="../../refresh-icon.png" />
                 </button>
             </div>
             <p>
                 Let's say we have a right triangle that looks like this:
             </p>
-            <canvas id="canvas1" width="200" height="100"></canvas>
+            <canvas id="canvas2" width="200" height="100"></canvas>
             <p id="practice1">
                 Test
             </p>
@@ -120,9 +136,9 @@
             </button>
         </div>
         <br />
-        <div class="card" id="4">
+        <div class="card" id="5">
             <h2>
-                4. Solving For Other Sides
+                5. Solving For Other Sides
             </h2>
             <p>
                 What happens if we know the length of the hypotenuse, but only one of the legs? Well, lucky for us, we can still use the <i>Pythagorean Theorem</i> to solve for that missing side. If you need to solve for b, simply plug in the values for a and c and solve for b. If you need to solve for a, simply plug in the values for b and c and solve for a.
@@ -153,19 +169,19 @@
             </p>
         </div>
         <br />
-        <div class="card" id="5">
+        <div class="card" id="6">
             <div class="head">
                 <h2>
-                    5. Practice: Solving for a Leg
+                    6. Practice: Solving for a Leg
                 </h2>
-                <button onclick="problem2Answers = generateProblem2(1, 10, 1, 10, 'practice2', 'canvas2')" class="refresh">
+                <button onclick="problem2Answers = generateProblem2(1, 10, 1, 10, 'practice2', 'canvas3')" class="refresh" title="Try a different problem">
                     <img src="../../refresh-icon.png" />
                 </button>
             </div>
             <p>
                 Let's say we have a right triangle that looks like this:
             </p>
-            <canvas id="canvas2" width="200" height="100"></canvas>
+            <canvas id="canvas3" width="200" height="100"></canvas>
             <p id="practice2">
                 Test
             </p>
@@ -181,9 +197,9 @@
             </button>
         </div>
         <br />
-        <div class="card" id="6">
+        <div class="card" id="7">
             <h2>
-                6. Recap
+                7. Recap
             </h2>
             <p>
                 The <i>Pythagorean Theorem</i> is a helpful equation that helps us solve for the length of any side of any right triangle, as long as we know the lengths of the other 2 sides.
@@ -217,10 +233,6 @@
             <p>
                 With a little more math, we can write a new equation to solve for the distance between two points in both 2D and 3D...
             </p>
-        </div>
-        <br />
-        <div class="page-link forward">
-            <a href="distance-formula.html">Distance Formula</a>
         </div>
     </body>
 </html>

@@ -2,8 +2,9 @@ var problem1Answers = [0, 0];
 var problem2Answers = [0, 0];
 
 document.addEventListener('DOMContentLoaded', function() {
-    problem1Answers = generateProblem1(1, 10, 1, 10, 'practice1', 'canvas1');
-    problem2Answers = generateProblem2(1, 10, 1, 10, 'practice2', 'canvas2');
+    generateExample(3, 4, 'example', 'canvas1');
+    problem1Answers = generateProblem1(1, 10, 1, 10, 'practice1', 'canvas2');
+    problem2Answers = generateProblem2(1, 10, 1, 10, 'practice2', 'canvas3');
 }, false);
 
 function setText(id, text) {
@@ -24,6 +25,13 @@ function drawTriangle(id, pointA, pointB, pointC) {
         ctx.lineTo(pointA[0], pointA[1]);
         ctx.stroke();
     }
+}
+
+function generateExample(a, b, id, id2) {
+    let c = getHypotenuse(a, b);
+
+    setText(id, "(a: " + a + ", b: " + b + ", c: " + c + ")");
+    drawTriangle(id2, [20 * a, 20 * b], [20 * a, 0], [0, 20 * b]);
 }
 
 function generateProblem1(minA, maxA, minB, maxB, id, id2) {

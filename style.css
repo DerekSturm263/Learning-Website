@@ -18,8 +18,8 @@
     padding: 25px;
     font-size: 16px;
     border-radius: 10px;
-    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
-    border: 1.5px solid grey;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    border: 1.5px solid peru;
 }
 
 .card h2 {
@@ -35,18 +35,16 @@
 }
 
 .answer-button {
-    background-color: mediumslateblue;
+    background-color: peru;
     color: white;
     width: 120px;
 }
 
 .refresh {
     float: right;
-    right: 0;
-    top: 0;
     height: 40px;
     width: 40px;
-    background-color: lightgrey;
+    background-color: peachpuff;
     color: black;
 }
 
@@ -57,6 +55,12 @@
 
 .head {
     display: flex;
+}
+
+.head h2 {
+    float: left;
+    text-align: left;
+    width: 100%;
 }
 
 .card button:hover {
@@ -72,20 +76,40 @@
 }
 
 html {
-    background-color: skyblue;
+    background-color: peachpuff;
     scroll-behavior: smooth;
 }
 
 header {
-    position: absolute;
-    background-color: darkslateblue;
-    padding: 25px;
+    position: fixed;
+    background-color: peru;
     color: white;
     left: 0;
     right: 0;
+    height: 60px;
+    top: 0;
     font-family: Calibri;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    line-height: 22px;
+}
+
+header h2 {
     text-align: center;
-    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+header a {
+    font-size: 40px;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 250px;
+    margin-right: 250px;
+    color: white;
+}
+
+header a:hover {
+    cursor: pointer;
 }
 
 .page-link {
@@ -94,7 +118,7 @@ header {
 }
 
 .back {
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 20px;
 }
 
@@ -107,6 +131,7 @@ header {
     text-decoration: none;
     color: black;
     font-weight: bolder;
+    font-size: 20px;
 }
 
 .sidebar {
@@ -121,6 +146,7 @@ header {
     color: black;
     text-decoration: none;
     transition: 0.5s;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar a:hover {
