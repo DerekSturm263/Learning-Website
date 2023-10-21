@@ -68,15 +68,15 @@
                     <span style="color: red"><b>a</b></span> and <span style="color: blue"><b>b</b></span> are the lengths of each leg
                 </li>
                 <li>
-                    <span style="color: purple"><b>c</b></span> is the length of the hypotenuse
+                    <span style="color: mediumpurple"><b>c</b></span> is the length of the hypotenuse
                 </li>
             </ul>
             <p>
-                Then: <b><span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup> = <span style="color: purple">c</span><sup>2</sup></b>
+                Then: <b><span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup> = <span style="color: mediumpurple">c</span><sup>2</sup></b>
             </p>
-            <p>That means that if we know the length of the hyponetuse squared, we can get the length of the hypotenuse by square rooting our number! To apply this to the equation, we can just square root both sides and it will cancel out with the square on the side with the hypotenuse.</p>
+            <p>That means that if we know the length of the hyponetuse squared, we can get the length of the hypotenuse by square rooting our number! To apply this to the equation, we can solve the side of the equation with <span style="color: red">a</span> and <span style="color: blue">b</span> and then square root both sides to give us <span style="color: mediumpurple">c</span>, the length of the hypotenuse. Square rooting <span style="color: mediumpurple">c</span> gets it on its own.</p>
             <p>
-                So: <b><span style="color: purple">c</span> = sqrt(<span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup>)</b>
+                So: <b><span style="color: mediumpurple">c</span> = sqrt(<span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup>)</b>
             </p>
         </div>
         <br />
@@ -85,12 +85,10 @@
                 2. Try It!
             </h2>
             <p>
-                Below is an interactive example of the <i>Pythagorean Theorem</i> in practice. You'll notice that for any right triangle, the <i>Pythagorean Theorem</i> remains true. By default, this will be a "3-4-5" triangle. You may notice that 3<sup>2</sup> + 4<sup>2</sup> is equal to 25, and if you square root 25, you get 5!
+                Below is an interactive example of the <i>Pythagorean Theorem</i> in practice. You may drag any of the corners to see the <i>Pythagorean Theorem</i> in action for different right triangles. By default, this will be a "<span style='color: red'>3</span>-<span style='color: blue'>4</span>-<span style='color: mediumpurple'>5</span>" triangle. This triangle is famous because it shows the <i>Pythagorean Theorem</i> using whole numbers.
             </p>
             <canvas id="canvas1" width="200" height="100"></canvas>
-            <p id="example">
-                Test
-            </p>
+            <p id="example"></p>
         </div>
         <br />
         <div class="card" id="3">
@@ -120,10 +118,8 @@
             <p>
                 Let's say we have a right triangle that looks like this:
             </p>
-            <canvas id="canvas2" width="200" height="100"></canvas>
-            <p id="practice1">
-                Test
-            </p>
+            <canvas id="canvas2" width="800" height="100"></canvas>
+            <p id="practice1"></p>
             <p class="question">
                 What's the length of the hypotenuse?
             </p>
@@ -131,7 +127,7 @@
             <button onclick="checkAnswer(getHypotenuse(problem1Answers[0], problem1Answers[1]), 'practice1-answer')" class="answer-button locked">
                 Verify Answer
             </button>
-            <button onclick="alert(getHypotenuse(problem1Answers[0], problem1Answers[1]))" class="answer-button">
+            <button onclick="setAnswer1(problem1Answers[0], problem1Answers[1], 'practice1')" class="answer-button">
                 Reveal Solution
             </button>
         </div>
@@ -141,31 +137,31 @@
                 5. Solving For Other Sides
             </h2>
             <p>
-                What happens if we know the length of the hypotenuse, but only one of the legs? Well, lucky for us, we can still use the <i>Pythagorean Theorem</i> to solve for that missing side. If you need to solve for b, simply plug in the values for a and c and solve for b. If you need to solve for a, simply plug in the values for b and c and solve for a.
+                What happens if we know the length of the hypotenuse, but only one of the legs? Well, lucky for us, we can still use the <i>Pythagorean Theorem</i> to solve for that missing side. If you need to solve for <span style="color: blue">b</span>, simply plug in the values for <span style="color: red">a</span> and <span style="color: mediumpurple">c</span> and solve for <span style="color: blue">b</span>. If you need to solve for <span style="color: red">a</span>, simply plug in the values for <span style="color: blue">b</span> and <span style="color: mediumpurple">c</span> and solve for <span style="color: red">a</span>.
             </p>
             <p>
-                An easier way to do this is to subtract a<sup>2</sup> or b<sup>2</sup> on both sides. Subtract a<sup>2</sup> on both sides if you want to solve for b and subtract b<sup>2</sup> on both sides if you want to solve for a. The following equations are the result:
+                An easier way to do this is to subtract <span style="color: red">a</span><sup>2</sup> or <span style="color: blue">b</span><sup>2</sup> on both sides. Subtract <span style="color: red">a</span><sup>2</sup> on both sides if you want to solve for b and subtract <span style="color: blue">b</span><sup>2</sup> on both sides if you want to solve for <span style="color: red">a</span>. The following equations are the result:
             </p>
             <p>
-                <b><span style="color: red">a</span><sup>2</sup> = <span style="color: purple">c</span><sup>2</sup> - <span style="color: blue">b</span><sup>2</sup></b>
-            </p>
-            <p>
-                or
-            </p>
-            <p>
-                <b><span style="color: blue">b</span><sup>2</sup> = <span style="color: purple">c</span><sup>2</sup> - <span style="color: red">a</span><sup>2</sup></b>
-            </p>
-            <p>
-                After square rooting both sides to get a and b on their own, we get the final two equations for that help us solve for a or b. The equation you choose is based on which sides you know. If you know a and c, choose the equation to solve for b. If you know b and c, choose the equation to solve for a.
-            </p>
-            <p>
-                <b><span style="color: red">a</span> = sqrt(<span style="color: purple">c</span><sup>2</sup> - <span style="color: blue">b</span><sup>2</sup>)</b>
+                <b><span style="color: red">a</span><sup>2</sup> = <span style="color: mediumpurple">c</span><sup>2</sup> - <span style="color: blue">b</span><sup>2</sup></b>
             </p>
             <p>
                 or
             </p>
             <p>
-                <b><span style="color: blue">b</span> = sqrt(<span style="color: purple">c</span><sup>2</sup> - <span style="color: red">a</span><sup>2</sup>)</b>
+                <b><span style="color: blue">b</span><sup>2</sup> = <span style="color: mediumpurple">c</span><sup>2</sup> - <span style="color: red">a</span><sup>2</sup></b>
+            </p>
+            <p>
+                After square rooting both sides to get <span style="color: red">a</span> and <span style="color: blue">b</span> on their own, we get the final two equations for that help us solve for <span style="color: red">a</span> or <span style="color: blue">b</span>. The equation you choose is based on which sides you know. If you know <span style="color: red">a</span> and <span style="color: mediumpurple">c</span>, choose the equation to solve for <span style="color: blue">b</span>. If you know <span style="color: blue">b</span> and <span style="color: mediumpurple">c</span>, choose the equation to solve for <span style="color: red">a</span>.
+            </p>
+            <p>
+                <b><span style="color: red">a</span> = sqrt(<span style="color: mediumpurple">c</span><sup>2</sup> - <span style="color: blue">b</span><sup>2</sup>)</b>
+            </p>
+            <p>
+                or
+            </p>
+            <p>
+                <b><span style="color: blue">b</span> = sqrt(<span style="color: mediumpurple">c</span><sup>2</sup> - <span style="color: red">a</span><sup>2</sup>)</b>
             </p>
         </div>
         <br />
@@ -182,9 +178,7 @@
                 Let's say we have a right triangle that looks like this:
             </p>
             <canvas id="canvas3" width="200" height="100"></canvas>
-            <p id="practice2">
-                Test
-            </p>
+            <p id="practice2"></p>
             <p class="question">
                 What's the length of the unknown leg?
             </p>
@@ -192,7 +186,7 @@
             <button onclick="checkAnswer(getLeg(problem2Answers[0], problem2Answers[1]), 'practice2-answer')" class="answer-button locked">
                 Verify Answer
             </button>
-            <button onclick="alert(getLeg(problem2Answers[0], problem2Answers[1]))" class="answer-button">
+            <button onclick="setAnswer2(problem2Answers[0], problem2Answers[1], 'practice2')" class="answer-button">
                 Reveal Solution
             </button>
         </div>
@@ -215,17 +209,17 @@
                     <span style="color: red"><b>a</b></span> and <span style="color: blue"><b>b</b></span> are the lengths of each leg
                 </li>
                 <li>
-                    <span style="color: purple"><b>c</b></span> is the length of the hypotenuse
+                    <span style="color: mediumpurple"><b>c</b></span> is the length of the hypotenuse
                 </li>
             </ul>
             <p>
-                <b><span style="color: purple">c</span> = sqrt(<span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup>)</b>
+                <b><span style="color: mediumpurple">c</span> = sqrt(<span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup>)</b>
             </p>
             <p>
-                <b><span style="color: red">a</span> = sqrt(<span style="color: purple">c</span><sup>2</sup> - <span style="color: blue">b</span><sup>2</sup>)</b>
+                <b><span style="color: red">a</span> = sqrt(<span style="color: mediumpurple">c</span><sup>2</sup> - <span style="color: blue">b</span><sup>2</sup>)</b>
             </p>
             <p>
-                <b><span style="color: blue">b</span> = sqrt(<span style="color: purple">c</span><sup>2</sup> - <span style="color: red">a</span><sup>2</sup>)</b>
+                <b><span style="color: blue">b</span> = sqrt(<span style="color: mediumpurple">c</span><sup>2</sup> - <span style="color: red">a</span><sup>2</sup>)</b>
             </p>
             <p>
                 These equations are all just the <i>Pythagorean Theorem</i> rewritten in different ways to solve for each of the side lengths.
@@ -234,5 +228,6 @@
                 With a little more math, we can write a new equation to solve for the distance between two points in both 2D and 3D...
             </p>
         </div>
+        <br />
     </body>
 </html>
