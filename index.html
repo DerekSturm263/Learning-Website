@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html style="background-image: linear-gradient(90deg, blue, red)";>
     <head>
         <title>VGD 2023-24: Class Website</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="home-style.css" />
         <script src="main.js"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
 
     <body>
-        <div class="sidebar-container" style="top: 11%; line-height: 75px; color: white;">
+        <header style="background-color: cornflowerblue;">
+            <h2 style="color: white;">
+                VGD 2023-24: Week 7 - Object Oriented Programming
+            </h2>
+        </header>
+
+        <div class="sidebar-container">
             <nav class="sidebar">
-                <ul style="list-style-type:none; text-align: center;">
+                <ul style="list-style-type: none; text-align: center;">
                     <li>
                         <a href="#1" style="color: white">Daily Slide</a>
                     </li>
@@ -36,10 +45,11 @@
             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSfGlAqKb2jyCaONVP3lSnUUk8IalcZn8R2wNfwSchuA5wrRDpe_-zHb-KsbmeFR3kpn8HJgJGYD1_1/embed?start=false&loop=false&delayms=60000&rm=minimal" frameborder="0" width="auto" height="auto" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" class="daily-slide" id="1"></iframe>
         </div>
 
-        <div class="home-tab" id="2" style="top: 100%; background-image: linear-gradient(to bottom, royalblue, tomato);"">
-            <br />
-            <br />
-            <br />
+        <div class="home-tab" id="2" style="top: 100%;">
+            <h2>
+                Links
+            </h2>
+
             <div class="home-tab-item">
                 <a href="https://mukilteo.schoology.com/course/6870132066/" class="button">Schoology</a>
                 <a href="https://www.q.wa-k12.net/mukilt/" class="button">Qmlativ</a>
@@ -59,11 +69,17 @@
             </div>
         </div>
 
-        <div class="home-tab" id="3" style="top: 200%; background-image: linear-gradient(to bottom, tomato, khaki);">
+        <div class="home-tab" id="3" style="top: 200%;">
+            <h2>Calendar</h2>
+
             <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQTTWunVp33nQSlK0qbrtfwR0-RodOkgpmmiGNyFwbN4Jk91kEJl7H70jJ82Yir72HcHUaWf8JD5CgV/pubhtml?widget=true&amp;headers=false" class="home-tab-item"></iframe>
         </div>
 
-        <div class="home-tab" id="4" style="top: 300%; background-image: linear-gradient(to bottom, khaki, mediumseagreen);" );>
+        <div class="home-tab" id="4" style="top: 300%;">
+            <h2>
+                Learn
+            </h2>
+
             <div class="home-tab-item" id="learn-tab">
                 <div class=" horizontal-tabs">
                     <button class="tab" onclick="switchTab('learn-tab', 'math')">Math</button>
@@ -390,6 +406,10 @@
                                 <a href="">8. Static Members</a>
                             </li>
                         </ol>
+
+                        <h2>Functional Programming</h2>
+                        <ol>
+                        </ol>
                     </div>
 
                     <div id="unity">
@@ -513,19 +533,27 @@
             </div>
         </div>
 
-        <div class="home-tab" id="5" style="top: 400%; background-image: linear-gradient(to bottom, mediumseagreen, orchid);">
+        <div class="home-tab" id="5" style="top: 400%;">
+            <h2>
+                Syllabus
+            </h2>
+
             <object data="syllabus.pdf#toolbar=0&view=fitV" type="application/pdf" class="home-tab-item">
                 <p>Unable to display PDF file. <a href="syllabus.pdf">Download syllabus</a>.</p>
             </object>
         </div>
 
-        <div class="home-tab" id="6" style="top: 500%; background-image: linear-gradient(to bottom, orchid, darkorange);">
+        <div class="home-tab" id="6" style="top: 500%;">
+            <h2>
+                Contact Me
+            </h2>
+
             <div class="home-tab-item contact-box">
                 <h2>Subject</h2>
-                <input type="text" class="input-simple" id="input-1"/>
+                <input type="text" class="input-simple" id="input-1" />
 
                 <h2>Message</h2>
-                <input type="text" class="input-long" id="input-2"/>
+                <input type="text" class="input-long" id="input-2" />
 
                 <button onclick="sendEmail('input-1', 'input-2')" class="input-send">Send!</button>
             </div>
