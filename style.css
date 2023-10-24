@@ -229,16 +229,15 @@ button:active {
 
 .home-tab-item {
     position: absolute;
-    width: 84vw;
+    width: 65vw;
     height: 100vh;
-    left: 15vw;
+    left: 20vw;
     z-index: -1;
+    margin-top: 10.5vh;
+    margin-bottom: 10.5vh;
 }
 
 .contact-box {
-    margin-left: 13vw;
-    margin-top: 55px;
-    width: 50vw;
     height: 75vh;
     padding: 25px;
     font-size: 16px;
@@ -282,4 +281,54 @@ button:active {
     border-radius: 5px;
     padding: 10px;
     width: 120px;
+}
+
+.horizontal-tabs {
+    display: flex;
+    margin: auto;
+    gap: 0;
+}
+
+.tab {
+    background-color: white;
+    color: black;
+    height: 60px;
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    font-size: 20px;
+}
+
+.content {
+    background-color: white;
+    margin: auto;
+    padding: 50px;
+    height: 65vh;
+    overflow-y: auto;
+}
+
+.content ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.content li {
+    font-family: Calibri;
+    background-color: peru;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 120px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.content li a {
+    text-decoration: none;
+    color: white;
 }
