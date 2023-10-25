@@ -16,41 +16,30 @@
             </h2>
         </header>
 
-        <div class="sidebar-container">
-            <nav class="sidebar">
-                <ul style="list-style-type: none; text-align: center;">
-                    <li>
-                        <a href="#1" style="color: white">Daily Slide</a>
-                    </li>
-                    <li>
-                        <a href="#2" style="color: white">Links</a>
-                    </li>
-                    <li>
-                        <a href="#3" style="color: white">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#4" style="color: white">Learn</a>
-                    </li>
-                    <li>
-                        <a href="#5" style="color: white">Syllabus</a>
-                    </li>
-                    <li>
-                        <a href="#6" style="color: white">Contact Me</a>
-                    </li>
-                </ul>
+        <br />
+        <br />
+        <br />
+
+        <div class="navbar-container">
+            <nav class="navbar">
+                <button onclick="switchTab('home-tabs', 'daily-slides')">Daily Slides</button>
+                <button onclick="switchTab('home-tabs', 'links')">Links</button>
+                <button onclick="switchTab('home-tabs', 'calendar')">Calendar</button>
+                <button onclick="switchTab('home-tabs', 'learn')">Learn</button>
+                <button onclick="switchTab('home-tabs', 'syllabus')">Syllabus</button>
+                <button onclick="switchTab('home-tabs', 'contact-me')">Contact Me</button>
             </nav>
         </div>
 
-        <div>
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSfGlAqKb2jyCaONVP3lSnUUk8IalcZn8R2wNfwSchuA5wrRDpe_-zHb-KsbmeFR3kpn8HJgJGYD1_1/embed?start=false&loop=false&delayms=60000&rm=minimal" frameborder="0" width="auto" height="auto" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" class="daily-slide" id="1"></iframe>
+        <div class="navbar-content" id="home-tabs">
+        <div class="home-tab" id="daily-slides">
+            <div class="card">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSfGlAqKb2jyCaONVP3lSnUUk8IalcZn8R2wNfwSchuA5wrRDpe_-zHb-KsbmeFR3kpn8HJgJGYD1_1/embed?start=false&loop=false&delayms=60000&rm=minimal" frameborder="0" width="auto" height="auto" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
         </div>
 
-        <div class="home-tab" id="2" style="top: 100%;">
-            <h2>
-                Links
-            </h2>
-
-            <div class="home-tab-item">
+        <div class="home-tab" id="links">
+            <div class="card">
                 <a href="https://mukilteo.schoology.com/course/6870132066/" class="button">Schoology</a>
                 <a href="https://www.q.wa-k12.net/mukilt/" class="button">Qmlativ</a>
                 <a href="https://drive.google.com/drive/folders/14hYE5gZ40UVZ2R9thnslm0gSKIgp4730?usp=sharing" class="button">Course Docs</a>
@@ -69,27 +58,23 @@
             </div>
         </div>
 
-        <div class="home-tab" id="3" style="top: 200%;">
-            <h2>Calendar</h2>
-
-            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQTTWunVp33nQSlK0qbrtfwR0-RodOkgpmmiGNyFwbN4Jk91kEJl7H70jJ82Yir72HcHUaWf8JD5CgV/pubhtml?widget=true&amp;headers=false" class="home-tab-item"></iframe>
+        <div class="home-tab" id="calendar">
+            <div class="card">
+                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQTTWunVp33nQSlK0qbrtfwR0-RodOkgpmmiGNyFwbN4Jk91kEJl7H70jJ82Yir72HcHUaWf8JD5CgV/pubhtml?widget=true&amp;headers=false"></iframe>
+            </div>
         </div>
 
-        <div class="home-tab" id="4" style="top: 300%;">
-            <h2>
-                Learn
-            </h2>
-
-            <div class="home-tab-item" id="learn-tab">
-                <div class=" horizontal-tabs">
+        <div class="home-tab" id="learn">
+            <div class="card">
+                <nav class=" horizontal-tabs">
                     <button class="tab" onclick="switchTab('learn-tab', 'math')">Math</button>
                     <button class="tab" onclick="switchTab('learn-tab', 'art-design')">Art/Design</button>
                     <button class="tab" onclick="switchTab('learn-tab', 'c-sharp')">C#</button>
                     <button class="tab" onclick="switchTab('learn-tab', 'unity')">Unity</button>
                     <button class="tab" onclick="switchTab('learn-tab', 'soft-skills')">Soft Skills</button>
-                </div>
+                </nav>
 
-                <div class="content">
+                <div class="content" id="learn-tab">
                     <div id="math">
                         <h2>Trigonometry</h2>
                         <ol>
@@ -533,22 +518,16 @@
             </div>
         </div>
 
-        <div class="home-tab" id="5" style="top: 400%;">
-            <h2>
-                Syllabus
-            </h2>
-
-            <object data="syllabus.pdf#toolbar=0&view=fitV" type="application/pdf" class="home-tab-item">
-                <p>Unable to display PDF file. <a href="syllabus.pdf">Download syllabus</a>.</p>
-            </object>
+        <div class="home-tab" id="syllabus">
+            <div class="card">
+                <object data="syllabus.pdf#toolbar=0&view=fitV" type="application/pdf">
+                    <p>Unable to display PDF file. <a href="syllabus.pdf">Download syllabus</a>.</p>
+                </object>
+            </div>
         </div>
 
-        <div class="home-tab" id="6" style="top: 500%;">
-            <h2>
-                Contact Me
-            </h2>
-
-            <div class="home-tab-item contact-box">
+        <div class="home-tab" id="contact-me">
+            <div class="card">
                 <h2>Subject</h2>
                 <input type="text" class="input-simple" id="input-1" />
 
@@ -557,6 +536,7 @@
 
                 <button onclick="sendEmail('input-1', 'input-2')" class="input-send">Send!</button>
             </div>
+        </div>
         </div>
     </body>
 </html>
