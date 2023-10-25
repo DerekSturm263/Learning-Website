@@ -11,7 +11,6 @@
 }
 
 .answer-button {
-    background-color: peru;
     color: white;
     width: 120px;
 }
@@ -24,7 +23,6 @@
     float: right;
     height: 40px;
     width: 40px;
-    background-color: peachpuff;
     color: black;
 }
 
