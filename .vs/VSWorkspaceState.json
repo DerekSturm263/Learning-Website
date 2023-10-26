@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Math",
-    "\\Math\\Trigonometry"
+    "\\C-Sharp",
+    "\\C-Sharp\\Object-Oriented-Programming",
+    "\\C-Sharp\\The-Basics",
+    "\\Math\\Binary",
+    "\\Math\\Matrices",
+    "\\Math\\Trigonometry",
+    "\\Math\\Vectors"
   ],
+  "SelectedNode": "\\C-Sharp\\Object-Oriented-Programming\\namespaces.html",
   "PreviewInSolutionExplorer": false
 }
