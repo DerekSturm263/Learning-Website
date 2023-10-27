@@ -2,13 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\C-Sharp",
+    "\\C-Sharp\\Intermediate C#",
     "\\C-Sharp\\Object-Oriented-Programming",
-    "\\C-Sharp\\The-Basics",
-    "\\Math\\Binary",
-    "\\Math\\Matrices",
-    "\\Math\\Trigonometry",
-    "\\Math\\Vectors"
+    "\\C-Sharp\\The-Basics"
   ],
-  "SelectedNode": "\\C-Sharp\\Object-Oriented-Programming\\namespaces.html",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
