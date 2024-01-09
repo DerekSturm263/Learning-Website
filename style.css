@@ -121,6 +121,7 @@ body {
     border-color: grey;
     border-left: none;
     border-right: none;
+    border-width: 1px;
 }
 
 .card h2 {
