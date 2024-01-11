@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html style="background-color: lightgrey;">
     <head>
-        <title>Math 1.1: Getting The Distance Between Points</title>
         <link rel="stylesheet" href="../../style.css" />
         <link rel="stylesheet" href="../../learn-style.css" />
         <script src="trigonometry.js"></script>
@@ -14,34 +13,131 @@
             <div class="card-content">
                 <div class="head">
                     <h2>
-                        1. What is the Pythagorean Theorem?
+                        Warm-up
                     </h2>
                 </div>
 
-                <p>
-                    The <i>Pythagorean Theorem</i> is an equation for right triangles that indicates the relationship between the lengths of all 3 sides.
-                    Specifically, it states that for all right triangles, if you square the length of both <span class="tooltip">legs</span> and add them together, you get the length of the <span class="tooltip">hypotenuse</span> squared.
-                </p>
-                <p>Let's put that into equation form...</p>
-                <p>
-                    Given:
-                </p>
-                <ul>
-                    <li>
-                        <span style="color: red"><b>a</b></span> and <span style="color: blue"><b>b</b></span> are the lengths of each leg
-                    </li>
-                    <li>
-                        <span style="color: mediumpurple"><b>c</b></span> is the length of the hypotenuse
-                    </li>
-                </ul>
-                <p>
-                    Then: <b><span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup> = <span style="color: mediumpurple">c</span><sup>2</sup></b>
-                </p>
-                <p>That means that if we know the length of the hyponetuse squared, we can get the length of the hypotenuse by square rooting our number! To apply this to the equation, we can solve the side of the equation with <span style="color: red">a</span> and <span style="color: blue">b</span> and then square root both sides to give us <span style="color: mediumpurple">c</span>, the length of the hypotenuse. Square rooting <span style="color: mediumpurple">c</span> gets it on its own.</p>
-                <p>
-                    So: <b><span style="color: mediumpurple">c</span> = sqrt(<span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup>)</b>
-                </p>
+                <p>Why might you want to know the distance between two objects in a video game?</p>
             </div>
+        </div>
+
+        <br />
+
+        <div class="card" id="1">
+            <div class="card-content">
+                <div class="head">
+                    <h2>
+                        The Why
+                    </h2>
+                </div>
+
+                <p>So why should you be concerned with finding the distance between two points anyways? Well, in the application of video game development, there are many reasons to want to do this. But first, we must understand that points on a coordinate grid can represent the position of objects and characters in a game. With that in mind, some applications for knowing the distance between 2 points includes:</p>
+            
+                <ul>
+                    <li>An enemy checking if the lpayer is close enough to start chasing</li>
+                    <li>A UI element that tells the player how close they are to a goal or checkpoint</li>
+                    <li>A button that grows bigger the closer the mouse gets to it</li>
+                    <li>And much more...</li>
+                </ul>
+
+                <p>As you can see, there are many reasons to want to know the distance between two objects or characters in a game, or more generally, 2 points on a coordinate grid.</p>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="card" id="1">
+            <div class="card-content">
+                <div class="head">
+                    <h2>
+                        The How
+                    </h2>
+                </div>
+
+                <p>So now that we have a reason to want to know the distance between two points, let's figure out how to actually do it. But before we get there, we need to talk about something called the Pythagorean Theorem.</p>
+
+                <br />
+
+                <h3>The Pythagorean Theorem</h3>
+
+                <p>The Pythagorean Theorem is a theorem that applies to any and all right triangles. It states that the length of the hypotenuse(the longest side) squared is equal to the length of both legs(the other 2 sides) squared added together.</p>
+                <p>As a formula, it looks like this:</p>
+                <p><b>a^2 + b^2 = c^2</b></p>
+                <p>Where a and b are the lengths of the 2 legs and c is the length of the hypotenuse.</p>
+
+                <p>For example, if we have a triangle that has the leg lengths of 3 and 4, then the hypotenuse will have a length of 5. To get this, we assign the legs 3 and 4 to a and b in our equation, then solve for c. 3^2 and 4^2 are 9 and 16, which added together equals 25. This makes our equation 25 = c^2, so all that's left to do is solve for c by cancelling the square. To cancel the square, we square root both sides, which gives us c = 5, the length of the hypotenuse.</p>
+                <p>Here's another example: For a triangle with the leg lengths of 5 and 7, what is the length of the hypotenuse? Well, first, we square 5 and 7 to get 25 and 49. Then, we add those together to get 74. Finally, we square root 74 to get 8.602, which means that 8.602 is the length of the hypotenuse!</p>
+
+                <p>As you can see, we we always square root the result to get our answer. In fact, we square root a^2 + b^2 to get c, since c is squared in the theorem. This means we can create a slightly more generalized version of the Pythagorean Theorem:</p>
+                <p><b>c = sqrt(a^2 + b^2)</b></p>
+                <p>Where a and b are the lengths of the 2 legs and c is the length of the hypotenuse.</p>
+
+                <h4>Practice</h4>
+
+                <br />
+
+                <h3>The Distance Formula</h3>
+
+                <h4>Practice</h4>
+
+                <br />
+
+                <h3>Generalizing the Distance Formula</h3>
+
+                <h4>Practice</h4>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="card" id="1">
+            <div class="card-content">
+                <div class="head">
+                    <h2>
+                        Recap
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <br />
+
+        <div class="card" id="1" style="border-bottom: none">
+            <div class="card-content">
+                <div class="head">
+                    <h2>
+                        Exit Ticket
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+        <p>
+            The <i>Pythagorean Theorem</i> is an equation for right triangles that indicates the relationship between the lengths of all 3 sides.
+            Specifically, it states that for all right triangles, if you square the length of both <span class="tooltip">legs</span> and add them together, you get the length of the <span class="tooltip">hypotenuse</span> squared.
+        </p>
+        <p>Let's put that into equation form...</p>
+        <p>
+            Given:
+        </p>
+        <ul>
+            <li>
+                <span style="color: red"><b>a</b></span> and <span style="color: blue"><b>b</b></span> are the lengths of each leg
+            </li>
+            <li>
+                <span style="color: mediumpurple"><b>c</b></span> is the length of the hypotenuse
+            </li>
+        </ul>
+        <p>
+            Then: <b><span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup> = <span style="color: mediumpurple">c</span><sup>2</sup></b>
+        </p>
+        <p>That means that if we know the length of the hyponetuse squared, we can get the length of the hypotenuse by square rooting our number! To apply this to the equation, we can solve the side of the equation with <span style="color: red">a</span> and <span style="color: blue">b</span> and then square root both sides to give us <span style="color: mediumpurple">c</span>, the length of the hypotenuse. Square rooting <span style="color: mediumpurple">c</span> gets it on its own.</p>
+        <p>
+            So: <b><span style="color: mediumpurple">c</span> = sqrt(<span style="color: red">a</span><sup>2</sup> + <span style="color: blue">b</span><sup>2</sup>)</b>
+        </p>
+        </div>
         </div>
 
         <br />
